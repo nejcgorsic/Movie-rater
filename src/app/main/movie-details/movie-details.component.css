@@ -1,0 +1,16 @@
+.orange {
+  color: orange;
+}
+
+.green {
+  color: green;
+}
+
+#rate-container {
+  border-top: 2px solid green;
+}
+
+#rate-container i {
+  cursor: pointer;
+  font-size: 2em;
+}

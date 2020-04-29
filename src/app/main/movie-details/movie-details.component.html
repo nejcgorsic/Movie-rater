@@ -1,0 +1,21 @@
+<div *ngIf="movie">
+  <h1>{{movie.title}}</h1>
+  <i class="material-icons" [ngClass]="{'orange':movie.avg_rating > 0}">star</i>
+  <i class="material-icons" [ngClass]="{'orange':movie.avg_rating > 1}">star</i>
+  <i class="material-icons" [ngClass]="{'orange':movie.avg_rating > 2}">star</i>
+  <i class="material-icons" [ngClass]="{'orange':movie.avg_rating > 3}">star</i>
+  <i class="material-icons" [ngClass]="{'orange':movie.avg_rating > 4}">star</i>
+  ({{movie.no_of_ratings}})
+  <p>{{movie.description}}</p>
+
+  <div id="rate-container">
+    <h2>Rate it!</h2>
+    <i *ngFor="let rate of [1,2,3,4,5]" class="material-icons" (mouseenter)="rateHover(rate)"
+       (mouseleave)="rateHovered = 0" (click)="rateClicked(rate)"
+       [ngClass]="{'green': rateHovered >= rate}"
+    >star</i>
+  </div>
+
+
+</div>
+
