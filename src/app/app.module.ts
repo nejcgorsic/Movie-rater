@@ -9,8 +9,11 @@ import {MainModule} from './main/main.module';
 import {AuthModule} from './auth/auth.module';
 
 import {HttpClientModule} from '@angular/common/http';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
+
+
+
+
 
 
 const routes: Routes = [
@@ -29,8 +32,7 @@ const routes: Routes = [
     MatIconModule,
     RouterModule.forRoot(
       routes
-    ),
-    FontAwesomeModule
+    )
   ],
   exports: [
     RouterModule,

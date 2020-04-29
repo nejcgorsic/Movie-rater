@@ -1,12 +1,23 @@
 .app {
   background-color: #282c34;
-  color:#fff;
+  color: #fff;
   min-height: calc(100vh - 100px);
   padding: 50px;
-  margin:0;
+  margin: 0;
 }
 
 
 h1 {
   text-align: center;
+  color: #ffa900;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h1 .material-icons {
+  margin: -3px;
+  font-size: 1em;
+  color: white;
+  display: inline-block;
+  transform: rotate(30deg);
 }

@@ -2,4 +2,29 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+button {
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 2px;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: 'Lato', sans-serif;
+}
+button:disabled {
+  color: #f3f3f3;
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 0.8em;
+  margin: 8px 0;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
 }

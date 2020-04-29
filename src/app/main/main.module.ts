@@ -9,6 +9,8 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieFormComponent } from './movie-form/movie-form.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 
 const routes: Routes = [
@@ -19,7 +21,8 @@ const routes: Routes = [
   declarations: [MainComponent, MovieListComponent, MovieFormComponent, MovieDetailsComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule
   ],
   exports: [
     RouterModule
